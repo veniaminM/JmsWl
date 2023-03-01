@@ -37,8 +37,6 @@ public class TestJmsConfig {
             jndiProps.setProperty(Context.INITIAL_CONTEXT_FACTORY, "weblogic.jndi.WLInitialContextFactory");
             jndiProps.setProperty(Context.PROVIDER_URL, url);
             //https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/wlapi/weblogic/jndi/WLContext.html
-            jndiProps.setProperty("RESPONSE_READ_TIMEOUT", "30000");
-            jndiProps.setProperty("CONNECT_TIMEOUT", "30000");
             jndiProps.setProperty("weblogic.jndi.connectTimeout", "30000");
             jndiProps.setProperty("weblogic.jndi.responseReadTimeout", "30000");
 
