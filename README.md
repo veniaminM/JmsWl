@@ -1,3 +1,3 @@
 # wl-jms
 
-./gradlew run
+./gradlew build
