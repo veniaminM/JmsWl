@@ -1,0 +1,3 @@
+# wl-jms
+
+./gradlew run
