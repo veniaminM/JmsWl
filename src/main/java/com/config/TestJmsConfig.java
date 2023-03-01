@@ -39,8 +39,8 @@ public class TestJmsConfig {
             //https://docs.oracle.com/en/middleware/standalone/weblogic-server/14.1.1.0/wlapi/weblogic/jndi/WLContext.html
             jndiProps.setProperty("RESPONSE_READ_TIMEOUT", "30000");
             jndiProps.setProperty("CONNECT_TIMEOUT", "30000");
-            jndiProps.setProperty("RMI_TIMEOUT", "30000");
-            jndiProps.setProperty("REQUEST_TIMEOUT", "30000");
+            jndiProps.setProperty("weblogic.jndi.connectTimeout", "30000");
+            jndiProps.setProperty("weblogic.jndi.responseReadTimeout", "30000");
 
             return jndiProps;
 
